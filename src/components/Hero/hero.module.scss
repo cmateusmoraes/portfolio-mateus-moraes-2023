@@ -1,4 +1,4 @@
-@import "../../styles/vars";
+@import "@/styles/vars";
 
 .hero {
   padding-top: 120px;
@@ -68,6 +68,8 @@
     top: 85px;
     z-index: 10;
     opacity: 0;
+    scale: 0.9;
+    transform-origin: bottom center;
     transform: translateY(20px);
 
     img {

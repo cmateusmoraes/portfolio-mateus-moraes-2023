@@ -1,32 +1,47 @@
 [
     {
-        "title": "Consectetur adipiscing elit 1",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.<p/>",
-        "infra": true,
-        "back": true,
-        "front": true,
+        "title": "Festival Cultura Inglesa",
+        "text": "<p>O maior desafio nesse projeto foi o desenvolvimento de um <strong>layout fiel</strong> ao projetado, com <strong>animações complexas</strong> e adaptáveis a qualquer tipo de tela. Todo conteúdo integrado por API Rest, cadastro, área logada, customização de perfil, integração com Vimeo, transmissões ao vivo com chats em tempo real entre muitos outros recursos.<p/>",
+        "url": "https://www.festivalculturainglesa.com.br/",
+        "technologies": [
+            "react",
+            "javascript",
+            "typescript",
+            "sass",
+            "redux",
+            "query"
+        ],
         "image": {
-            "webp": "/image/vault.webp",
-            "jpg": "/image/vault.jpg"
+            "webp": "/image/jobs/cultura-inglesa-festival.webp",
+            "jpg": "/image/cultura-inglesa-festival.jpg"
         }
     },
     {
-        "title": "Consectetur adipiscing elit 2",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.<p/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.<p/>",
-        "front": true,
+        "title": "NIVEA Mais",
+        "text": "<p>Uma plataforma para dar aos usuários o caesso a um programa de pontos integrado com as farmácias de todo país. Integração com uma <strong>API complexa</strong>, foco em <strong>usabilidade e experiência do usuário</strong> principalmente na versão para dispositivos móveis. <strong>Layout fiel</strong> ao projetado.<p/>",
+        "url": "https://mais.nivea.com.br/",
+        "technologies": [
+            "react",
+            "javascript",
+            "sass",
+            "redux"
+        ],
         "image": {
-            "webp": "/image/vault.webp",
-            "jpg": "/image/vault.jpg"
+            "webp": "/image/jobs/nivea-mais.webp",
+            "jpg": "/image/jobs/nivea-mais.jpg"
         }
     },
     {
-        "title": "Consectetur adipiscing elit 3",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.<p/>",
-        "back": true,
-        "front": true,
+        "title": "Programa Mais Clientes",
+        "text": "<p>Por solicitação do cliente, nesse projeto trabalhamos com <strong>PHP</strong> usando o framework Symfony, e JQuery. Sistema todo administrável com blog, integração complexa com sistema de terceiro para obtenção dos dados.<p/>",
+        "url": "https://www.programamaisclientes.com.br/",
+        "technologies": [
+            "javascript",
+            "sass"
+        ],
         "image": {
-            "webp": "/image/vault.webp",
-            "jpg": "/image/vault.jpg"
+            "webp": "/image/jobs/programa-mais-clientes.webp",
+            "jpg": "/image/jobs/programa-mais-clientes.jpg"
         }
     }
 ]

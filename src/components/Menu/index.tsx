@@ -21,12 +21,13 @@ export function Menu({ position, isOpen = false, onClickButton }: menuProps) {
       top: offsetTop,
       behavior: "smooth",
     });
-  }
+  };
 
   return (
     <nav
-      className={`${styles.menu} ${position === "footer" ? styles.footer : ""
-        } ${isOpen ? styles.isOpen : ""}`}
+      className={`${styles.menu} ${
+        position === "footer" ? styles.footer : ""
+      } ${isOpen ? styles.isOpen : ""}`}
     >
       <Link href="#about" onClick={handleClick}>
         Sobre
@@ -34,10 +35,20 @@ export function Menu({ position, isOpen = false, onClickButton }: menuProps) {
       <Link href="#portfolio" onClick={handleClick}>
         Portfolio
       </Link>
-      <Link href="https://www.linkedin.com/in/cmateusmoraes/" onClick={onClickButton} target="_blank" rel="noopener noreferrer">
+      <Link
+        href="https://www.linkedin.com/in/cmateusmoraes/"
+        onClick={onClickButton}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Linkedin
       </Link>
-      <Link href="https://github.com/cmateusmoraes" onClick={onClickButton} target="_blank" rel="noopener noreferrer">
+      <Link
+        href="https://github.com/cmateusmoraes"
+        onClick={onClickButton}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Github
       </Link>
       <Link

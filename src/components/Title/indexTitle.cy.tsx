@@ -12,5 +12,5 @@ describe("Title", () => {
     cy.mount(<Title>EXEMPLO DE TÍTULO</Title>);
     cy.get('[data-cy="line"]').should("exist");
     cy.get("[data-cy=line]").should("be.visible");
-  })
+  });
 });

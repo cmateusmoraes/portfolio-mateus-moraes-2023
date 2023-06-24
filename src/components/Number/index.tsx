@@ -12,11 +12,11 @@ type NumberProps = {
   children: React.ReactNode;
 };
 
+gsap.registerPlugin(ScrollTrigger);
+
 export function Number({ value, unit = "", children }: NumberProps) {
   const numberRef = useRef(null);
   const valueRef = useRef(null);
-
-  gsap.registerPlugin(ScrollTrigger);
 
   useLayoutEffect(() => {
     gsap.fromTo(

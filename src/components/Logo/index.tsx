@@ -7,7 +7,6 @@ import { gsap } from "gsap";
 import styles from "./logo.module.scss";
 
 export function Logo() {
-
   const bgLogoRef = useRef(null);
   const logoRef = useRef(null);
   const nameRef = useRef(null);

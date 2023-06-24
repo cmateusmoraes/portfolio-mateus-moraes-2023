@@ -11,12 +11,12 @@ type TitleProps = {
   theme?: string;
 };
 
+gsap.registerPlugin(ScrollTrigger);
+
 export function Title({ children, theme }: TitleProps) {
   const titleWrapperRef = useRef(null);
   const lineRef = useRef(null);
   const titleRef = useRef(null);
-
-  gsap.registerPlugin(ScrollTrigger);
 
   useLayoutEffect(() => {
     gsap.fromTo(
@@ -74,7 +74,9 @@ export function Title({ children, theme }: TitleProps) {
     >
       <h4 ref={titleWrapperRef}>
         <span data-cy="line" className={styles.line} ref={lineRef} />
-        <span data-cy="titleText" ref={titleRef}>{children}</span>
+        <span data-cy="titleText" ref={titleRef}>
+          {children}
+        </span>
       </h4>
     </div>
   );

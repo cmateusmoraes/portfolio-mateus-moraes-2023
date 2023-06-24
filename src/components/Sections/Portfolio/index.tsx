@@ -8,16 +8,17 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import { Title } from "@/components/Title";
 import { PortfolioItem } from "./PortfolioItem";
-import dataJobs from '@/data/jobs.json';
+
+import dataJobs from "@/data/jobs.json";
 
 import styles from "./portfolio.module.scss";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export function Portfolio() {
   let titleRef = useRef(null);
   let icoTLRef = useRef(null);
   let icoBRRef = useRef(null);
-
-  gsap.registerPlugin(ScrollTrigger);
 
   useLayoutEffect(() => {
     gsap.fromTo(
@@ -96,9 +97,8 @@ export function Portfolio() {
               key={index}
               image={[_job.image.webp, _job.image.jpg]}
               title={_job.title}
-              infra={_job.infra}
-              back={_job.back}
-              front={_job.front}
+              url={_job.url}
+              technologies={_job.technologies}
             >
               <div dangerouslySetInnerHTML={{ __html: _job.text }} />
             </PortfolioItem>
