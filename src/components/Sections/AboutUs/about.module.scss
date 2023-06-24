@@ -68,10 +68,6 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
   }
-
-  .imgMobile {
-    display: none;
-  }
 }
 
 @media (max-width: 1280px) {
@@ -114,26 +110,27 @@
 
       .technologies {
         width: 100%;
+        padding-right: 0;
+        padding-bottom: 15px;
 
-        & > div {
-          display: none;
+        ul {
+          grid-template-columns: 1fr 1fr 1fr;
+
+          li {
+            height: 110px;
+            width: 100%;
+
+            p {
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
         }
       }
 
       .text {
         padding-top: 30px;
         width: 100%;
-      }
-    }
-
-    .imgMobile {
-      display: block;
-      padding-top: 40px;
-      margin-bottom: -100px;
-
-      img {
-        width: 100%;
-        height: auto;
       }
     }
   }

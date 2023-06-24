@@ -198,6 +198,10 @@
           height: auto;
           margin-bottom: 15px;
 
+          &:after {
+            opacity: 0;
+          }
+
           img {
             max-width: 100%;
             height: auto;
