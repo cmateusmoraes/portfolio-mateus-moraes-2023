@@ -2,7 +2,7 @@
     {
         "title": "Festival Cultura Inglesa",
         "text": "<p>O maior desafio nesse projeto foi o desenvolvimento de um <strong>layout fiel</strong> ao projetado, com <strong>animações complexas</strong> e adaptáveis a qualquer tipo de tela. Todo conteúdo integrado por API Rest, cadastro, área logada, customização de perfil, integração com Vimeo, transmissões ao vivo com chats em tempo real entre muitos outros recursos.<p/>",
-        "url": "https://www.festivalculturainglesa.com.br/",
+        "url": "https://www.culturainglesafestival.com.br/",
         "technologies": [
             "react",
             "javascript",
