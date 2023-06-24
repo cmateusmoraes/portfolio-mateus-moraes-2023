@@ -1,0 +1,67 @@
+@import "../../styles/vars";
+
+.header {
+  position: fixed;
+  background-color: $black-color;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  z-index: 100;
+  opacity: 0;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  position: relative;
+
+  & > a {
+    position: relative;
+    transition: all 0.15s ease-out;
+    z-index: 10;
+
+    &:hover {
+      transform: scale(0.96);
+    }
+  }
+}
+
+@media (min-width: 990px) and (max-height: 830px) {
+  .header {
+    .headerWrapper {
+      padding: 12px 0;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    border-bottom: 1px solid #5f5f5f;
+  }
+
+  .headerWrapper {
+    padding: 12px 0;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      background-color: $black-color;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 5;
+    }
+
+    img {
+      max-width: 150px;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+}

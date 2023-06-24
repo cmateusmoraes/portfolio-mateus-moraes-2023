@@ -1,0 +1,97 @@
+@import "../../styles/vars";
+
+.menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &:last-child {
+      color: $black-color;
+    }
+  }
+
+  &.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+
+    a {
+      display: block;
+      color: $white-color;
+      padding: 5px 0;
+
+      &:last-child {
+        background-color: transparent;
+        color: $white-color !important;
+        padding: 5px 0;
+        margin-left: 0;
+        font-size: 18px;
+
+        &:hover {
+          transform: translateY(0);
+          color: $primary-color !important;
+        }
+      }
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .menu {
+    &:not(&.footer) {
+      display: block;
+      position: fixed;
+      top: 79px;
+      right: 0;
+      left: 0;
+      background-color: $black-color;
+      padding: 15px 0 40px;
+      z-index: 0;
+      transition: all 0.3s ease-out;
+      transform: translateY(-450px);
+
+      a {
+        text-align: center;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+
+        &:last-child {
+          margin-top: 20px;
+          width: 80%;
+        }
+      }
+
+      &.isOpen {
+        transform: translateY(0);
+      }
+    }
+
+    &.footer {
+      a {
+        font-size: 14px !important;
+
+        &:last-child {
+          min-height: 40px;
+          padding-top: 15px;
+        }
+      }
+    }
+  }
+}

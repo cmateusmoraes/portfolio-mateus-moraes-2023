@@ -1,0 +1,229 @@
+@import "../../../styles/vars";
+
+.portfolio {
+  position: relative;
+  background-color: $black-color;
+  padding: 160px 0 120px;
+  overflow: hidden;
+
+  h2 {
+    color: #ffffff;
+    margin-top: 0;
+  }
+
+  .icoTL {
+    position: absolute;
+    top: -320px;
+    left: -220px;
+  }
+
+  .icoBR {
+    position: absolute;
+    bottom: -320px;
+    right: -220px;
+  }
+}
+
+.job {
+  position: relative;
+
+  a {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    text-decoration: none;
+
+    .image {
+      position: relative;
+      overflow: hidden;
+      width: 550px;
+      height: 462px;
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        transform-origin: center center;
+        transition: all 0.3s ease-out;
+      }
+    }
+
+    .detail {
+      position: relative;
+      padding: 40px 60px;
+      width: calc(100% - 550px);
+
+      h4 {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 1.182em;
+        color: #ffffff;
+        margin-bottom: 20px;
+        transition: all 0.3s ease-out;
+      }
+
+      p {
+        color: $white-color;
+        margin-bottom: 15px;
+      }
+    }
+
+    ul {
+      position: absolute;
+      bottom: 15px;
+      right: 60px;
+      left: 60px;
+      display: flex;
+
+      li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 0 15px;
+
+        img {
+          margin-right: 10px;
+        }
+
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+
+    &:hover {
+      .image {
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      .detail {
+        h4 {
+          color: $primary-color;
+        }
+      }
+
+      & > div:last-child {
+        border-color: $primary-color;
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .portfolio {
+    padding-top: 160px;
+
+    .icoTL {
+      top: -420px;
+    }
+  }
+}
+
+@media (min-width: 990px) and (max-height: 830px) {
+  .portfolio {
+    padding-top: 120px;
+
+    .icoTL {
+      top: -320px;
+      left: auto;
+      right: -220px;
+    }
+
+    .job {
+      a {
+        .image {
+          height: 400px;
+
+          img {
+            width: 440px;
+            height: 400px;
+          }
+        }
+
+        .detail {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio {
+    padding: 120px 0 30px;
+
+    .icoTL {
+      position: absolute;
+      top: -220px;
+      left: -130px;
+      width: 320px;
+      height: 320px;
+    }
+
+    .icoBR {
+      width: 350px;
+      height: 350px;
+      bottom: -220px;
+      right: -180px;
+    }
+
+    .job {
+      a {
+        display: block;
+
+        .image {
+          width: 100%;
+          height: auto;
+          margin-bottom: 15px;
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .detail {
+        padding: 0;
+        width: 100%;
+
+        h4 {
+          font-size: 22px;
+          margin-bottom: 15px;
+        }
+
+        ul {
+          position: relative;
+          bottom: unset;
+          right: unset;
+          left: unset;
+          margin-bottom: 20px;
+
+          li {
+            font-size: 12px;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 391px) {
+  .portfolio {
+    .job {
+      .detail {
+        ul {
+          li {
+            font-size: 10px;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}

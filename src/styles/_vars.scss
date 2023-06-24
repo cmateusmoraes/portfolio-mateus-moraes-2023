@@ -1,0 +1,11 @@
+$primary-color: #4accb4;
+$primary-color-hover: #019479;
+$white-color: #e6e6e6;
+$black-color: #0c0c0c;
+
+:export {
+  primaryColor: $primary-color;
+  primaryColorHover: $primary-color-hover;
+  whiteColor: $white-color;
+  blackColor: $black-color;
+}

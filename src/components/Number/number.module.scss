@@ -1,0 +1,26 @@
+@import "../../styles/vars";
+
+.number {
+  color: $black-color;
+  font-size: 80px;
+  line-height: 1.125em;
+  font-weight: 700;
+
+  span {
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.111em;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .number {
+    font-size: 64px;
+  }
+}

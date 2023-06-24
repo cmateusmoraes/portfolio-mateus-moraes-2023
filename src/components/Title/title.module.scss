@@ -1,0 +1,52 @@
+@import "../../styles/vars";
+
+.titleWrapper {
+  margin-bottom: 16px;
+
+  h4 {
+    position: relative;
+    color: $black-color;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.111em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .line {
+      display: block;
+      width: 100px;
+      height: 1px;
+      background-color: $black-color;
+      margin-right: 20px;
+      transform-origin: left;
+    }
+  }
+
+  &.light {
+    h4 {
+      color: #ffffff;
+    }
+
+    .line {
+      background-color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .titleWrapper {
+    h4 {
+      font-size: 16px;
+
+      .line {
+        width: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+}

@@ -1,0 +1,45 @@
+@import "../../styles/vars";
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  i {
+    position: relative;
+    display: grid;
+    place-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 1px;
+    background-color: $primary-color;
+    margin-right: 15px;
+
+    span {
+      display: block;
+      font-weight: 300;
+      font-size: 60px;
+      color: #000000;
+    }
+  }
+
+  .name {
+    display: block;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    strong {
+      display: block;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 700px) {
+}

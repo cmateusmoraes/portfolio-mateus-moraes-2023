@@ -1,0 +1,139 @@
+$color1: inherit;
+$bgColor1: transparent;
+$bgColor2: #ffffff;
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  display: none;
+  position: relative;
+  padding: 17px 0 5px;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: $color1;
+  text-transform: none;
+  background-color: $bgColor1;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  z-index: 10;
+}
+
+.hamburger.isActive {
+  .hamburgerInner {
+    background-color: $bgColor2;
+    &::before {
+      background-color: $bgColor2;
+    }
+    &::after {
+      background-color: $bgColor2;
+    }
+  }
+}
+
+.hamburgerBox {
+  width: 36px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburgerInner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+  width: 36px;
+  height: 3px;
+  box-shadow: 1px 1.5px 5px 0 rgba(0, 0, 0, 0.35);
+  background-color: $bgColor2;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+
+  &::before {
+    width: 36px;
+    height: 3px;
+    box-shadow: 1px 1.5px 5px 0 rgba(0, 0, 0, 0.35);
+    background-color: $bgColor2;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+    content: "";
+    display: block;
+    top: -10px;
+  }
+
+  &::after {
+    width: 36px;
+    height: 3px;
+    box-shadow: 1px 1.5px 5px 0 rgba(0, 0, 0, 0.35);
+    background-color: $bgColor2;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+    width: 24px;
+    left: 12px;
+    content: "";
+    display: block;
+    bottom: -10px;
+  }
+}
+
+.hamburgerSpring {
+  .hamburgerInner {
+    top: 2px;
+    transition: background-color 0s 0.13s linear;
+    &::before {
+      top: 10px;
+      transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+        transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    &::after {
+      top: 20px;
+      transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+        transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+  }
+}
+
+.hamburgerSpring.isActive {
+  .hamburgerInner {
+    transition-delay: 0.22s;
+    background-color: $bgColor1 !important;
+    box-shadow: none;
+    &::before {
+      top: 0;
+      transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+        transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: translate3d(0, 10px, 0) rotate(45deg);
+    }
+    &::after {
+      top: 0;
+      left: 0;
+      width: 36px;
+      transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+        transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: translate3d(0, 10px, 0) rotate(-45deg);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .hamburger {
+    display: block;
+  }
+}

@@ -1,0 +1,143 @@
+@import "../../../styles/vars";
+
+.aboutUs {
+  position: relative;
+  padding: 160px 0 80px;
+  z-index: 10;
+  background-color: #fafafa;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+
+    .technologies {
+      width: 60%;
+      padding-right: 80px;
+      padding-bottom: 80px;
+
+      img {
+        object-fit: cover;
+        object-position: center;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+
+        li {
+          border: 1px solid #000000;
+          border-radius: 2px;
+          width: 130px;
+          height: 130px;
+          display: grid;
+          place-content: center;
+
+          p {
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            margin-bottom: 5px;
+          }
+
+          svg {
+            display: block;
+            max-width: 50px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    .text {
+      width: 40%;
+      padding-top: 60px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+  }
+
+  .numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .imgMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .aboutUs {
+    & > div {
+      .technologies {
+        padding-right: 40px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 990px) and (max-height: 830px) {
+  .aboutUs {
+    padding-top: 120px;
+
+    .technologies {
+      padding-right: 40px;
+    }
+
+    & > div {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutUs {
+    padding: 100px 0 80px;
+    margin-bottom: -2px;
+
+    & > div {
+      display: block;
+
+      .technologies {
+        width: 100%;
+
+        & > div {
+          display: none;
+        }
+      }
+
+      .text {
+        padding-top: 30px;
+        width: 100%;
+      }
+    }
+
+    .imgMobile {
+      display: block;
+      padding-top: 40px;
+      margin-bottom: -100px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 391px) {
+}
