@@ -63,6 +63,7 @@ export function PortfolioItem({
               alt="image"
               width={550}
               height={462}
+              loading="lazy"
             />
           </picture>
         </div>
