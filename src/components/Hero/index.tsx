@@ -91,7 +91,6 @@ export function Hero() {
                 alt="image"
                 width={325}
                 height={400}
-                priority
               />
             </picture>
           </div>
