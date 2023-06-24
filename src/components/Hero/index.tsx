@@ -14,6 +14,7 @@ export function Hero() {
   const icoTLRef = useRef(null);
   const textRef = useRef(null);
   const imageRef = useRef(null);
+  const imageMobRef = useRef(null);
   const icoBRRef = useRef(null);
   const timelineStart = useRef(gsap.timeline());
   const timeline = useRef(gsap.timeline({ defaults: { ease: "power.out" } }));
@@ -62,14 +63,34 @@ export function Hero() {
                 type="image/webp"
               />
               <source
-                srcSet="/image/mateus-moraes-front-end-.jpg"
+                srcSet="/image/mateus-moraes-front-end-hero.jpg"
                 type="image/jpeg"
               />
               <Image
-                src="/image/mateus-moraes-front-end.jpg"
+                src="/image/mateus-moraes-front-end-hero.jpg"
                 alt="image"
                 width={680}
                 height={820}
+                priority
+              />
+            </picture>
+          </div>
+          {/* Teria outros modos para isso ser feito mas optei por isso para melhorar a performance mobile no pageSpeed usando webp */}
+          <div className={styles.imageMobile} ref={imageMobRef}>
+            <picture>
+              <source
+                srcSet="/image/mateus-moraes-front-end-hero-mobile.webp"
+                type="image/webp"
+              />
+              <source
+                srcSet="/image/mateus-moraes-front-end-hero-mobile.jpg"
+                type="image/jpeg"
+              />
+              <Image
+                src="/image/mateus-moraes-front-end-hero-mobile.jpg"
+                alt="image"
+                width={325}
+                height={400}
               />
             </picture>
           </div>

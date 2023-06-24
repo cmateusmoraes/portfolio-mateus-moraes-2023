@@ -1,5 +1,6 @@
 "use client";
 
+import { MouseEvent } from "react";
 import { useRef, useLayoutEffect } from "react";
 import Link from "next/link";
 import { gsap } from "gsap";
@@ -10,6 +11,14 @@ export function Logo() {
   const bgLogoRef = useRef(null);
   const logoRef = useRef(null);
   const nameRef = useRef(null);
+
+  const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   useLayoutEffect(() => {
     const ctxStart = gsap.context(() => {
@@ -26,7 +35,12 @@ export function Logo() {
   }, []);
 
   return (
-    <Link className={styles.logo} href="/" ref={bgLogoRef}>
+    <Link
+      className={styles.logo}
+      href="/"
+      ref={bgLogoRef}
+      onClick={handleClick}
+    >
       <i title="Inspecione aqui para descobrir o maior segredo de um front-end: Como centralizar um elemento dentro de um container.">
         <span>M</span>
       </i>
