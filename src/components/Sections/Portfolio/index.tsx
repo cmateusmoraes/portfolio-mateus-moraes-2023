@@ -8,7 +8,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import { Title } from "@/components/Title";
 import { PortfolioItem } from "./PortfolioItem";
-
 import dataJobs from '@/data/jobs.json';
 
 import styles from "./portfolio.module.scss";
