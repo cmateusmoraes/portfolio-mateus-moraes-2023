@@ -79,6 +79,10 @@
   }
 
   .imageMobile {
+    opacity: 0;
+    scale: 0.9;
+    transform-origin: bottom center;
+    transform: translateY(20px);
     display: none;
   }
 }
