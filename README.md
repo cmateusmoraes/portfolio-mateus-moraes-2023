@@ -1,34 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio | Mateus Moraes - Desenvolvedor Front-End
 
-## Getting Started
+Contato: [https://www.linkedin.com/in/cmateusmoraes/](https://www.linkedin.com/in/cmateusmoraes/)
 
-First, run the development server:
+<br/>
 
-```bash
+<img src="https://mateus-moraes.vercel.app/image/jobs/portfolio.jpg" alt="Imagem Portfolio">
+
+> Este portfolio foi criado com o intuito de usar algumas das tecnologias mais demandadas do mercado front-end atualmente.
+
+<br/>
+
+### Ajustes e melhorias
+
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+
+- [x] Implementação do lint-staged com husky para automatizar validação do lint e rodar testes unitários antes do push na master.
+- [x] Inclusão de seção descritiva sobre tecnologias usadas no desenvolviento do portfolio.
+- [ ] Finalização da implementação de testes unitários usando Cypress
+- [ ] Implementação de testes e2e usando Cypress
+- [ ] Implementação de Storybook
+- [ ] Otimizações finais
+
+<br/>
+
+## 💻 Pré-requisitos
+
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+* Node.js 18.15.0+
+
+* Projeto desenvolvido no Windows
+   
+
+<br/>
+
+## 🚀 Instalando Portfolio Mateus Moraes
+
+Para instalar o Portfolio Mateus Moraes, siga estas etapas:
+
+Linux e macOS:
+```
+npm install
+npm run prepare
+```
+
+Windows:
+```
+npm install
+npm run prepare
+```
+
+<br/>
+
+## ☕ Usando Portfolio Mateus Moraes
+
+Para usar Portfolio Mateus Moraes, siga estas etapas:
+
+```
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
 ```
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador e veja o resultado.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br/>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Para compilar Portfolio Mateus Moraes, siga estas etapas:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+npm run build
+```
 
-## Learn More
+<br/>
 
-To learn more about Next.js, take a look at the following resources:
+[⬆ Voltar ao topo](#portfolio-mateus-moraes-2023)<br>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Esse é um projeto [Next.js](https://nextjs.org/) criado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
