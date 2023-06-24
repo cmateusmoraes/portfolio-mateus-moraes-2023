@@ -89,8 +89,8 @@ export function Hero() {
               <Image
                 src="/image/mateus-moraes-front-end-hero-mobile.jpg"
                 alt="image"
-                width={325}
-                height={400}
+                width={400}
+                height={350}
               />
             </picture>
           </div>
