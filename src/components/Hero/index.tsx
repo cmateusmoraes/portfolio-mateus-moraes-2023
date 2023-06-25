@@ -30,11 +30,6 @@ export function Hero() {
           { opacity: 1, scale: 1, y: 0, duration: 0.5 },
           0.3
         )
-        .to(
-          imageMobRef.current,
-          { opacity: 1, scale: 1, y: 0, duration: 0.5 },
-          0.3
-        )
         .to(icoBRRef.current, { opacity: 1, x: 0, y: 0, duration: 0.5 }, 0.4);
     }, heroRef);
     return () => {

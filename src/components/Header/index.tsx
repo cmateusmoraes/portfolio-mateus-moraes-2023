@@ -9,6 +9,8 @@ import { Logo } from "@/components/Logo";
 
 import styles from "./header.module.scss";
 
+gsap.config({ nullTargetWarn: false });
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
