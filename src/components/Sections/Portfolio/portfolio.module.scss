@@ -32,6 +32,7 @@
     justify-content: space-between;
     margin-bottom: 60px;
     text-decoration: none;
+    height: 375px;
 
     .image {
       position: relative;
@@ -191,9 +192,11 @@
 
     .job {
       a {
+        height: auto;
         display: block;
 
         .image {
+          position: relative;
           width: 100%;
           height: auto;
           margin-bottom: 15px;
@@ -203,7 +206,7 @@
           }
 
           img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
           }
         }

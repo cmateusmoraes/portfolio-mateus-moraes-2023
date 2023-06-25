@@ -14,7 +14,7 @@ import styles from "./portfolio.module.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Portfolio() {
+export function Portfolio() {
   let titleRef = useRef(null);
   let icoTLRef = useRef(null);
   let icoBRRef = useRef(null);

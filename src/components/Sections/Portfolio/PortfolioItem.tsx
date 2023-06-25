@@ -55,15 +55,14 @@ export function PortfolioItem({
     <div className={styles.job} ref={jobRef}>
       <Link href={String(url)} target="_blank" rel="noopener noreferrer">
         <div className={styles.image}>
-          <picture>
-            <Image
-              src={String(image)}
-              alt={String(title)}
-              width={550}
-              height={462}
-              loading="lazy"
-            />
-          </picture>
+          <Image
+            src={String(image)}
+            alt={String(title)}
+            width={518}
+            height={350}
+            quality={100}
+            loading="lazy"
+          />
         </div>
 
         <div className={styles.detail}>
