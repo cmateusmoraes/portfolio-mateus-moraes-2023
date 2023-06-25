@@ -153,8 +153,8 @@ export function AboutUs() {
             <Number value={20} unit="+">
               Anos de experiência
             </Number>
-            <Number value={43} unit="K+">
-              Chícaras de café
+            <Number value={49} unit="K+">
+              Xícaras de café
             </Number>
             <Number value={2} unit=".">
               Filhos lindos
