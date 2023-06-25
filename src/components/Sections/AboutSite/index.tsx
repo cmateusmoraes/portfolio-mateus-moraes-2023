@@ -7,13 +7,13 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import { Title } from "@/components/Title";
 
-import styles from "./experiment.module.scss";
+import styles from "./about-site.module.scss";
 
 import imgPortfolio from "./portfolio-pessoal.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export function Experiment() {
+export function AboutSite() {
   let titleRef = useRef(null);
   let articleRef = useRef(null);
   let screenRef = useRef(null);
