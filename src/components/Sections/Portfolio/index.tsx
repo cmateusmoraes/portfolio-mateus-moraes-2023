@@ -1,8 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
-
 "use client";
 
 import { useRef, useLayoutEffect } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
@@ -15,7 +14,7 @@ import styles from "./portfolio.module.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export function Portfolio() {
+export default function Portfolio() {
   let titleRef = useRef(null);
   let icoTLRef = useRef(null);
   let icoBRRef = useRef(null);
@@ -77,7 +76,7 @@ export function Portfolio() {
 
   return (
     <section className={styles.portfolio} id="portfolio">
-      <img
+      <Image
         className={styles.icoTL}
         src="/image/ico-circle.svg"
         alt="Mateus Moraes"
@@ -95,7 +94,7 @@ export function Portfolio() {
           {dataJobs.map((_job, index) => (
             <PortfolioItem
               key={index}
-              image={[_job.image.webp, _job.image.jpg]}
+              image={_job.image}
               title={_job.title}
               url={_job.url}
               technologies={_job.technologies}
@@ -105,7 +104,7 @@ export function Portfolio() {
           ))}
         </div>
       </div>
-      <img
+      <Image
         className={styles.icoBR}
         src="/image/ico-circle.svg"
         alt="Mateus Moraes"

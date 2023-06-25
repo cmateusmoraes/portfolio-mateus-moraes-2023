@@ -11,10 +11,7 @@
             "redux",
             "query"
         ],
-        "image": {
-            "webp": "/image/jobs/cultura-inglesa-festival.webp",
-            "jpg": "/image/cultura-inglesa-festival.jpg"
-        }
+        "image": "/image/jobs/cultura-inglesa-festival.webp"
     },
     {
         "title": "NIVEA Mais",
@@ -26,10 +23,7 @@
             "sass",
             "redux"
         ],
-        "image": {
-            "webp": "/image/jobs/nivea-mais.webp",
-            "jpg": "/image/jobs/nivea-mais.jpg"
-        }
+        "image": "/image/jobs/nivea-mais.webp"
     },
     {
         "title": "Programa Mais Clientes",
@@ -39,9 +33,6 @@
             "javascript",
             "sass"
         ],
-        "image": {
-            "webp": "/image/jobs/programa-mais-clientes.webp",
-            "jpg": "/image/jobs/programa-mais-clientes.jpg"
-        }
+        "image": "/image/jobs/programa-mais-clientes.webp"
     }
 ]
