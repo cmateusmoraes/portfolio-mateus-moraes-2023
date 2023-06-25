@@ -88,6 +88,10 @@ export function Experiment() {
               <strong>Typescript</strong>.
             </li>
             <li>
+              <strong>CSS Modules</strong> com <strong>SASS</strong> e{" "}
+              <strong>GSAP + ScrollTrigger</strong> para animações.
+            </li>
+            <li>
               Implementação de <strong>testes automatizados</strong> com{" "}
               <strong>Cypress</strong>
             </li>

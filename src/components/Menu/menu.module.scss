@@ -84,27 +84,9 @@
     }
 
     &.footer {
-      padding-bottom: 0;
-
-      a {
-        font-size: 14px !important;
-
-        &:last-child {
-          min-height: auto;
-          padding-top: 0;
-          font-weight: 300;
-          padding-top: 5px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 376px) {
-  .menu {
-    &.footer {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      padding-bottom: 0;
 
       a {
         font-size: 14px !important;
