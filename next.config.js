@@ -3,10 +3,8 @@
 const path = require("path");
 
 const nextConfig = {
-  output: "export",
-  trailingSlash: true,
   images: {
-    unoptimized: true,
+    formats: ["image/avif", "image/webp"],
   },
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
