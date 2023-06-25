@@ -12,86 +12,11 @@ import { Logo } from "@/components/Logo";
 import styles from "./footer.module.scss";
 
 export function Footer() {
-  const titleRef = useRef(null);
-  const letsTalkRef = useRef(null);
-  const aboutRef = useRef(null);
-  const siteMapRef = useRef(null);
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  useLayoutEffect(() => {
-    gsap.fromTo(
-      titleRef.current,
-      { y: 20, autoAlpha: 0 },
-      {
-        y: 0,
-        autoAlpha: 1,
-        overwrite: true,
-        duration: 0.6,
-        scrollTrigger: {
-          trigger: titleRef.current,
-          start: "0 bottom",
-          scrub: false,
-        },
-      }
-    );
-
-    gsap.fromTo(
-      letsTalkRef.current,
-      { y: 20, autoAlpha: 0 },
-      {
-        y: 0,
-        autoAlpha: 1,
-        overwrite: true,
-        duration: 0.6,
-        delay: 0.3,
-        scrollTrigger: {
-          trigger: letsTalkRef.current,
-          start: "bottom bottom",
-          scrub: false,
-        },
-      }
-    );
-
-    gsap.fromTo(
-      aboutRef.current,
-      { y: 20, autoAlpha: 0 },
-      {
-        y: 0,
-        autoAlpha: 1,
-        overwrite: true,
-        duration: 0.6,
-        scrollTrigger: {
-          trigger: aboutRef.current,
-          start: "bottom bottom",
-          scrub: false,
-        },
-      }
-    );
-
-    gsap.fromTo(
-      siteMapRef.current,
-      { y: 20, autoAlpha: 0 },
-      {
-        y: 0,
-        autoAlpha: 1,
-        overwrite: true,
-        duration: 0.6,
-        delay: 0.2,
-        scrollTrigger: {
-          trigger: siteMapRef.current,
-          start: "20% bottom",
-          scrub: false,
-        },
-      }
-    );
-  });
-
   return (
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.start}>
-          <h2 ref={titleRef}>
+          <h2>
             Quer começar
             <br /> um projeto?
           </h2>
@@ -99,7 +24,6 @@ export function Footer() {
             href="https://api.whatsapp.com/send?phone=5511930322625"
             target="_blank"
             rel="norefereer noopener"
-            ref={letsTalkRef}
           >
             Vamos conversar
             <ButtonArrow />
@@ -107,7 +31,7 @@ export function Footer() {
         </div>
 
         <div className={styles.info}>
-          <div className={styles.about} ref={aboutRef}>
+          <div className={styles.about}>
             <Logo />
 
             <p>
@@ -125,7 +49,7 @@ export function Footer() {
             </p>
           </div>
 
-          <nav className="sitemap" ref={siteMapRef}>
+          <nav className="sitemap">
             <Menu position="footer" onClickButton={() => {}} />
           </nav>
         </div>
