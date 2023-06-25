@@ -13,7 +13,7 @@ import { ButtonArrow } from "@/components/ButtonArrow";
 import styles from "./portfolio.module.scss";
 
 type PortfolioItemProps = {
-  image: String[];
+  image: String;
   title: String;
   technologies: String[];
   url?: String;
@@ -56,11 +56,9 @@ export function PortfolioItem({
       <Link href={String(url)} target="_blank" rel="noopener noreferrer">
         <div className={styles.image}>
           <picture>
-            <source srcSet={String(image[0])} type="image/webp" />
-            <source srcSet={String(image[1])} type="image/jpg" />
             <Image
-              src={String(image[0])}
-              alt="image"
+              src={String(image)}
+              alt={String(title)}
               width={550}
               height={462}
               loading="lazy"
