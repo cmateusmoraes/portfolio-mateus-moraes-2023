@@ -6,7 +6,7 @@ Contato: [https://www.linkedin.com/in/cmateusmoraes/](https://www.linkedin.com/i
 
 <br/>
 
-<img src="https://mateus-moraes.vercel.app/image/jobs/portfolio.jpg" alt="Imagem Portfolio">
+<img src="https://mateus-moraes.vercel.app/image/portfolio.jpg" alt="Imagem Portfolio">
 
 > Este portfolio foi criado com o intuito de usar algumas das tecnologias mais demandadas do mercado front-end atualmente.
 
