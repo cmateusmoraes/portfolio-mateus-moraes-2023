@@ -105,7 +105,7 @@
 
 @media (max-width: 991px) {
   .hero {
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 0;
 
     .text {
@@ -117,19 +117,20 @@
     }
 
     .image {
-      display: none;
-    }
-
-    .imageMobile {
+      position: relative;
       display: block;
       width: 100%;
       height: auto;
-      position: relative;
       z-index: 10;
+      top: unset;
+      right: unset;
+      bottom: unset;
+      left: unset;
 
       img {
         display: block;
         width: 100%;
+        max-height: 45vh;
         height: auto;
       }
     }

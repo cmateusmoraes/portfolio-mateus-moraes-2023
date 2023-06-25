@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-
 "use client";
 
 import { useRef, useLayoutEffect } from "react";
@@ -9,15 +7,15 @@ import { gsap } from "gsap";
 
 import styles from "./hero.module.scss";
 
+import imgHero from "./mateus-moraes-front-end-hero.webp";
+
 export function Hero() {
   const heroRef = useRef(null);
   const icoTLRef = useRef(null);
   const textRef = useRef(null);
   const imageRef = useRef(null);
-  const imageMobRef = useRef(null);
   const icoBRRef = useRef(null);
   const timelineStart = useRef(gsap.timeline());
-  const timeline = useRef(gsap.timeline({ defaults: { ease: "power.out" } }));
 
   useLayoutEffect(() => {
     const ctxStart = gsap.context(() => {
@@ -27,7 +25,7 @@ export function Hero() {
         .to(textRef.current, { opacity: 1, y: 0, duration: 0.5 }, 0.2)
         .to(
           imageRef.current,
-          { opacity: 1, scale: 1, y: 0, duration: 0.5 },
+          { opacity: 1, scale: 1, y: 0, duration: 0.4 },
           0.3
         )
         .to(icoBRRef.current, { opacity: 1, x: 0, y: 0, duration: 0.5 }, 0.4);
@@ -57,59 +55,24 @@ export function Hero() {
             </p>
           </div>
           <div className={styles.image} ref={imageRef}>
-            <picture>
-              <source
-                srcSet="/image/mateus-moraes-front-end-hero.webp"
-                type="image/webp"
-              />
-              <source
-                srcSet="/image/mateus-moraes-front-end-hero.jpg"
-                type="image/jpeg"
-              />
-              <Image
-                src="/image/mateus-moraes-front-end-hero.jpg"
-                alt="image"
-                width={680}
-                height={820}
-                priority
-              />
-            </picture>
-          </div>
-          {/* Teria outros modos para isso ser feito mas optei por isso para melhorar a performance mobile no pageSpeed usando webp */}
-          <div className={styles.imageMobile} ref={imageMobRef}>
-            <picture>
-              <source
-                srcSet="/image/mateus-moraes-front-end-hero-mobile.webp"
-                type="image/webp"
-              />
-              <source
-                srcSet="/image/mateus-moraes-front-end-hero-mobile.jpg"
-                type="image/jpeg"
-              />
-              <Image
-                src="/image/mateus-moraes-front-end-hero-mobile.jpg"
-                alt="image"
-                width={543}
-                height={476}
-              />
-            </picture>
+            <Image src={imgHero} alt="image" quality={75} priority />
           </div>
         </div>
       </div>
 
       <div className={styles.bg}>
-        <img
+        <Image
           className={styles.icoTL}
           src="/image/ico-circle.svg"
-          alt="MateusMoraes"
+          alt="Mateus Moraes Front-End Sênior"
           width={442}
           height={442}
           ref={icoTLRef}
         />
-        <img
+        <Image
           className={styles.icoBR}
           src="/image/ico-circle.svg"
-          alt="MateusMoraes"
+          alt="Mateus Moraes Front-End Especialista"
           width={442}
           height={442}
           ref={icoBRRef}
