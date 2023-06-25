@@ -1,0 +1,76 @@
+@import "@/styles/vars";
+
+.experiment {
+  padding: 160px 0 0;
+
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  hgroup {
+    width: 100%;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  p,
+  li {
+    a {
+      color: $primary-color;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  article {
+    width: calc(100% - 400px);
+    p {
+      margin-bottom: 25px;
+    }
+
+    ul {
+      padding-left: 40px;
+      list-style: disc;
+      margin-bottom: 25px;
+    }
+  }
+
+  img {
+    width: 290px;
+    height: auto;
+    transform: translateY(-120px);
+  }
+}
+
+@media (min-width: 990px) and (max-height: 830px) {
+  .experiment {
+    padding: 120px 0 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .experiment {
+    padding: 110px 0 60px;
+
+    & > div {
+      display: block;
+    }
+
+    article {
+      width: 100%;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+}

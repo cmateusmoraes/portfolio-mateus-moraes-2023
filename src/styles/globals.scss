@@ -58,7 +58,8 @@ body {
     margin: 0.67em 0;
   }
 
-  p {
+  p,
+  li {
     font-size: 18px;
     line-height: 1.65em;
     color: $black-color;
@@ -121,12 +122,15 @@ body {
       line-height: 1.125em;
       margin-bottom: 15px;
     }
+
     h2 {
       font-size: 30px;
       line-height: 1.167em;
     }
-    p {
-      font-size: 14px;
+
+    p,
+    li {
+      font-size: 15px;
       line-height: 1.667em;
     }
 
@@ -141,11 +145,41 @@ body {
     }
   }
 }
+
+@media (min-width: 600px) and (max-width: 990px) {
+  body {
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+      line-height: 1.667em;
+    }
+
+    input,
+    textarea,
+    button,
+    select,
+    div,
+    span,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+}
+
 @media (max-width: 391px) {
   body {
     h1 {
       font-size: 34px;
     }
+
     h2 {
       font-size: 26px;
     }

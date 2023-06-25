@@ -155,11 +155,10 @@
     .job {
       a {
         .image {
-          height: 400px;
-
           img {
-            width: 440px;
-            height: 400px;
+            display: block;
+            max-width: 90%;
+            height: auto;
           }
         }
 
@@ -167,11 +166,15 @@
           padding-left: 0;
         }
       }
+
+      ul {
+        left: 0;
+      }
     }
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1265px) {
   .portfolio {
     padding: 120px 0 30px;
 
