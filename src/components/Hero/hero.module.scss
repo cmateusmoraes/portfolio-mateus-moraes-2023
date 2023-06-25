@@ -73,6 +73,7 @@
     transform: translateY(20px);
 
     img {
+      max-width: 680px;
       object-fit: cover;
       object-position: center;
     }
@@ -100,6 +101,12 @@
 @media (min-width: 990px) and (max-height: 830px) {
   .hero {
     padding-top: 40px;
+
+    .image {
+      img {
+        max-width: 580px;
+      }
+    }
   }
 }
 
@@ -130,7 +137,6 @@
       img {
         display: block;
         width: 100%;
-        max-height: 45vh;
         height: auto;
       }
     }
@@ -152,6 +158,20 @@
         bottom: unset;
         width: 260px;
         height: 260px;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 990px) {
+  .hero {
+    .image {
+      width: 100%;
+
+      img {
+        max-width: 100%;
+        max-height: 50vh;
+        width: 100%;
       }
     }
   }

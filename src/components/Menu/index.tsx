@@ -35,6 +35,9 @@ export function Menu({ position, isOpen = false, onClickButton }: menuProps) {
       <Link href="#portfolio" onClick={handleClick}>
         Portfolio
       </Link>
+      <Link href="#this-site" onClick={handleClick}>
+        Sobre o site
+      </Link>
       <Link
         href="https://www.linkedin.com/in/cmateusmoraes/"
         onClick={onClickButton}

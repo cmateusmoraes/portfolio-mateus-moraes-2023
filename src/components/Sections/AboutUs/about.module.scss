@@ -92,6 +92,10 @@
       padding-right: 40px;
     }
 
+    h2 {
+      font-size: 44px;
+    }
+
     & > div {
       p {
         font-size: 16px;
@@ -132,6 +136,27 @@
         padding-top: 30px;
         width: 100%;
       }
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 990px) {
+  .aboutUs {
+    & > div {
+      .technologies {
+        ul {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+
+      .text {
+        padding-top: 30px;
+        width: 100%;
+      }
+    }
+
+    .numbers {
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 }

@@ -57,9 +57,10 @@ export function Hero() {
           <div className={styles.image} ref={imageRef}>
             <Image
               src={imgHero}
-              alt="Desenvolvimento de produtos digitais</strong> modernos, fiéis ao layout, com
+              alt="Desenvolvimento de produtos digitais modernos, fiéis ao layout, com
               qualidade e automatização de testes e processos, integração com
               APIs Rest, CI/CD Pipelines. Experiências com metodologias ágeis."
+              priority={true}
               quality={80}
             />
           </div>

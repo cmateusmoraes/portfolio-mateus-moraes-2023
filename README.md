@@ -16,7 +16,7 @@ Contato: [https://www.linkedin.com/in/cmateusmoraes/](https://www.linkedin.com/i
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] Implementação do lint-staged com husky para automatizar validação do lint e rodar testes unitários antes do push na master.
+- [x] Implementação do lint-staged com husky para automatizar validação do lint antes dos commits.
 - [x] Inclusão de seção descritiva sobre tecnologias usadas no desenvolviento do portfolio.
 - [ ] Finalização da implementação de testes unitários usando Cypress
 - [ ] Implementação de testes e2e usando Cypress
@@ -76,7 +76,5 @@ npm run build
 ```
 
 <br/>
-
-[⬆ Voltar ao topo](#portfolio-mateus-moraes-2023)<br>
 
 Esse é um projeto [Next.js](https://nextjs.org/) criado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
