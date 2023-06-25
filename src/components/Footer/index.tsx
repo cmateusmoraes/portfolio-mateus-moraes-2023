@@ -30,7 +30,7 @@ export function Footer() {
         duration: 0.6,
         scrollTrigger: {
           trigger: titleRef.current,
-          start: "bottom bottom",
+          start: "0 bottom",
           scrub: false,
         },
       }
@@ -92,14 +92,17 @@ export function Footer() {
       <div className="container">
         <div className={styles.start}>
           <h2 ref={titleRef}>
-            Quer começar<br /> um projeto?
+            Quer começar
+            <br /> um projeto?
           </h2>
           <Link
             href="https://api.whatsapp.com/send?phone=5511930322625"
             target="_blank"
             rel="norefereer noopener"
-            ref={letsTalkRef}>
-            Vamos conversar<ButtonArrow />
+            ref={letsTalkRef}
+          >
+            Vamos conversar
+            <ButtonArrow />
           </Link>
         </div>
 
@@ -108,15 +111,22 @@ export function Footer() {
             <Logo />
 
             <p>
-              Este portfolio foi criado com o intuito de usar algumas das tecnologias
-              mais demandadas do mercado front-end atualmente, acesse o {" "}
-              <Link href="https://github.com/cmateusmoraes" target="_blank" rel="noreferrer noopener">github</Link>
-              {" "}para ter acesso ao código fonte.
+              Este portfolio foi criado com o intuito de usar algumas das
+              tecnologias mais demandadas do mercado front-end atualmente,
+              acesse o{" "}
+              <Link
+                href="https://github.com/cmateusmoraes"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                github
+              </Link>{" "}
+              para ter acesso ao código fonte.
             </p>
           </div>
 
           <nav className="sitemap" ref={siteMapRef}>
-            <Menu position="footer" onClickButton={() => { }} />
+            <Menu position="footer" onClickButton={() => {}} />
           </nav>
         </div>
       </div>
