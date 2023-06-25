@@ -132,21 +132,26 @@ export function AboutUs() {
         </div>
         <div className={styles.text}>
           <p ref={p1Ref}>
-            Meu nome é Mateus Moraes, sou um front-end que realmente gosta do
-            que faz. Comecei trabalhando em agências de publicidade como júnior
-            e, quando saí delas, estava coordenando equipes de desenvolvimento.
+            Meu nome é <strong>Mateus Moraes</strong>, sou um front-end que
+            realmente gosta do que faz. Iniciei em agências de publicidade como
+            júnior e, quando saí delas, estava{" "}
+            <strong>coordenando equipes</strong> de desenvolvimento.
           </p>
           <p ref={p2Ref}>
             Em 2015, decidi seguir carreira solo como freelancer, onde tenho a
-            oportunidade de participar dos mais variados tipos de projetos:
-            produtos digitais para startups, MVPs, sites promocionais,
-            plataformas de fidelização de clientes, institucionais e landing
-            pages.
+            oportunidade de participar dos mais variados tipos de projetos:{" "}
+            <strong>
+              produtos digitais para startups, MVPs, sites promocionais,
+              plataformas de fidelização de clientes, institucionais e landing
+              pages
+            </strong>
+            .
           </p>
           <p ref={p3Ref}>
             Em muitos desses projetos, tenho contato direto com o cliente desde
             a ideação, ajudando na definição do melhor tipo de arquitetura para
-            cada um dos desafios.
+            cada um dos desafios. Com tantos projetos diferentes já me aventurei
+            na <strong>AWS, Azure, Vercel, Google Cloud entre outras</strong>.
           </p>
 
           <div className={styles.numbers}>

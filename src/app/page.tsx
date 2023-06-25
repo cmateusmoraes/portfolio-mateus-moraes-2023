@@ -1,7 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { AboutUs } from "@/components/Sections/AboutUs";
 import { Portfolio } from "@/components/Sections/Portfolio";
-import { Experiment } from "@/components/Sections/Experiment";
+import { AboutSite } from "@/components/Sections/AboutSite";
 
 export default async function Home() {
   return (
@@ -12,7 +12,7 @@ export default async function Home() {
 
       <Portfolio />
 
-      <Experiment />
+      <AboutSite />
     </main>
   );
 }
