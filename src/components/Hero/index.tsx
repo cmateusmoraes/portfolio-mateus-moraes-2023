@@ -50,12 +50,18 @@ export function Hero() {
             </h1>
             <p>
               <strong>Produtos digitais</strong> modernos, fiéis ao layout, com
-              qualidade e automatização de processos e testes, integração com
+              qualidade e automatização de testes e processos, integração com
               APIs Rest, CI/CD Pipelines. Experiências com metodologias ágeis.
             </p>
           </div>
           <div className={styles.image} ref={imageRef}>
-            <Image src={imgHero} alt="image" quality={75} priority />
+            <Image
+              src={imgHero}
+              alt="Desenvolvimento de produtos digitais</strong> modernos, fiéis ao layout, com
+              qualidade e automatização de testes e processos, integração com
+              APIs Rest, CI/CD Pipelines. Experiências com metodologias ágeis."
+              quality={80}
+            />
           </div>
         </div>
       </div>

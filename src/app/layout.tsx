@@ -12,16 +12,16 @@ const space = Space_Grotesk({ subsets: ["latin"] });
 export const metadata = {
   title: "Mateus Moraes - Desenvolvedor Front-End",
   description:
-    "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, TypescriptHTML, CSS ",
+    "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, Typescript, HTML, CSS ",
   openGraph: {
     title: "Mateus Moraes - Desenvolvedor Front-End",
     description:
-      "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, Typescript HTML, CSS ",
+      "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, Typescript, HTML, CSS ",
     url: "https://mateus-moraes.vercel.app",
     siteName: "Mateus Moraes - Portfolio",
     images: [
       {
-        url: "https://mateus-moraes.vercel.app/image/jobs/portfolio.jpg",
+        url: "https://mateus-moraes.vercel.app/image/portfolio.jpg",
         width: 800,
         height: 546,
       },

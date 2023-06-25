@@ -58,8 +58,8 @@ export function PortfolioItem({
           <Image
             src={String(image)}
             alt={String(title)}
-            width={518}
-            height={350}
+            width={800}
+            height={540}
             quality={100}
             loading="lazy"
           />
