@@ -30,7 +30,7 @@ export const metadata = {
     type: "website",
   },
   twitter: {
-    card: "https://mateus-moraes.vercel.app/image/portfolio.jpg",
+    card: "summary_large_image",
     title: "Mateus Moraes - Desenvolvedor Front-End",
     description:
       "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, Typescript, HTML, CSS ",
