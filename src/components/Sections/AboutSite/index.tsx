@@ -120,7 +120,7 @@ export function AboutSite() {
               para avaliar com Pagespeed.
             </li>
             <li>
-              TODO: Implementar <strong>Storyboard</strong>.
+              TODO: Implementar <strong>Storybook</strong>.
             </li>
           </ul>
 

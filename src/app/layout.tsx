@@ -29,6 +29,15 @@ export const metadata = {
     locale: "pt_BR",
     type: "website",
   },
+  twitter: {
+    card: "https://mateus-moraes.vercel.app/image/portfolio.jpg",
+    title: "Mateus Moraes - Desenvolvedor Front-End",
+    description:
+      "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, Typescript, HTML, CSS ",
+    creator: "@cmateusmoraes",
+    creatorId: "1467726470533754880",
+    images: ["https://mateus-moraes.vercel.app/image/portfolio.jpg"],
+  },
 };
 
 export default function RootLayout({
