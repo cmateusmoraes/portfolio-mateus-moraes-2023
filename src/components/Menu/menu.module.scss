@@ -2,9 +2,20 @@
 
 .menu {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    li {
+      &:last-child {
+        a {
+          color: $black-color;
+        }
+      }
+    }
+  }
 
   a {
     font-size: 18px;
@@ -16,37 +27,40 @@
     &:hover {
       color: $primary-color;
     }
-
-    &:last-child {
-      color: $black-color;
-    }
   }
 
   &.footer {
-    display: flex;
-    justify-content: space-between;
     padding-bottom: 80px;
 
-    a {
-      display: block;
-      color: $white-color;
-      padding: 5px 0;
+    ul {
+      display: flex;
+      justify-content: space-between;
 
-      &:last-child {
-        background-color: transparent;
-        color: $white-color !important;
-        padding: 5px 0;
-        margin-left: 0;
-        font-size: 18px;
+      li {
+        &:last-child {
+          a {
+            background-color: transparent;
+            color: $white-color !important;
+            padding: 5px 0;
+            margin-left: 0;
+            font-size: 18px;
 
-        &:hover {
-          transform: translateY(0);
-          color: $primary-color !important;
+            &:hover {
+              transform: translateY(0);
+              color: $primary-color !important;
+            }
+          }
         }
       }
 
-      &:hover {
-        color: $primary-color;
+      a {
+        display: block;
+        color: $white-color;
+        padding: 5px 0;
+
+        &:hover {
+          color: $primary-color;
+        }
       }
     }
   }
@@ -55,27 +69,34 @@
 @media (max-width: 1040px) {
   .menu {
     &:not(&.footer) {
-      display: block;
-      position: fixed;
       top: 79px;
-      right: 0;
-      left: 0;
-      background-color: $black-color;
-      padding: 15px 0 40px;
+      position: fixed;
       z-index: 0;
       transition: all 0.3s ease-out;
       transform: translateY(-450px);
+      right: 0;
+      left: 0;
+      background-color: $black-color;
+
+      ul {
+        display: block;
+        padding: 15px 0 40px;
+
+        li {
+          &:last-child {
+            a {
+              margin-top: 20px;
+              width: 80%;
+            }
+          }
+        }
+      }
 
       a {
         text-align: center;
         display: block;
         width: 90%;
         margin: 0 auto;
-
-        &:last-child {
-          margin-top: 20px;
-          width: 80%;
-        }
       }
 
       &.isOpen {
@@ -84,19 +105,26 @@
     }
 
     &.footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
       padding-bottom: 0;
+
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        li {
+          &:last-child {
+            a {
+              min-height: auto;
+              padding-top: 0;
+              font-weight: 300;
+              padding-top: 5px;
+            }
+          }
+        }
+      }
 
       a {
         font-size: 14px !important;
-
-        &:last-child {
-          min-height: auto;
-          padding-top: 0;
-          font-weight: 300;
-          padding-top: 5px;
-        }
       }
     }
   }
