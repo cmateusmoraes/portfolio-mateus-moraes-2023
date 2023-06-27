@@ -12,7 +12,7 @@ const space = Space_Grotesk({ subsets: ["latin"] });
 const titleShare = "Mateus Moraes - Desenvolvedor Front-End";
 const descriptionShare =
   "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, Typescript, HTML, CSS.";
-const urlShare = "https://mateus-moraes.vercel.app/";
+const urlShare = "https://mateus-moraes.vercel.app";
 
 export const metadata = {
   title: titleShare,
@@ -24,7 +24,7 @@ export const metadata = {
     siteName: titleShare,
     images: [
       {
-        url: `${urlShare}/image/img-share.jpg"`,
+        url: `${urlShare}/image/img-share.jpg`,
         width: 800,
         height: 546,
       },
@@ -38,7 +38,7 @@ export const metadata = {
     description: descriptionShare,
     creator: "@cmateusmoraes",
     creatorId: "1467726470533754880",
-    images: [`${urlShare}/image/img-share.jpg"`],
+    images: [`${urlShare}image/img-share.jpg`],
   },
 };
 
