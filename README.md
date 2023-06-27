@@ -6,7 +6,7 @@ Contato: [https://www.linkedin.com/in/cmateusmoraes/](https://www.linkedin.com/i
 
 <br/>
 
-<img src="https://mateus-moraes.vercel.app/image/portfolio.jpg" alt="Imagem Portfolio">
+<img src="https://mateus-moraes.vercel.app/image/img-share.jpg" alt="Imagem Portfolio Mateus Moraes Front-End">
 
 > Este portfolio foi criado com o intuito de usar algumas das tecnologias mais demandadas do mercado front-end atualmente.
 
@@ -16,6 +16,7 @@ Contato: [https://www.linkedin.com/in/cmateusmoraes/](https://www.linkedin.com/i
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
+- [x] Adaptação e testes para Notebook Wide e tablets na vertical e celulares na horizontal.
 - [x] Implementação do lint-staged com husky para automatizar validação do lint antes dos commits.
 - [x] Inclusão de seção descritiva sobre tecnologias usadas no desenvolviento do portfolio.
 - [ ] Finalização da implementação de testes unitários usando Cypress
