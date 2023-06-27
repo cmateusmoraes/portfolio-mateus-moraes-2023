@@ -9,19 +9,22 @@ import { Footer } from "@/components/Footer";
 
 const space = Space_Grotesk({ subsets: ["latin"] });
 
+const titleShare = "Mateus Moraes - Desenvolvedor Front-End";
+const descriptionShare =
+  "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, Typescript, HTML, CSS.";
+const urlShare = "https://mateus-moraes.vercel.app/";
+
 export const metadata = {
-  title: "Mateus Moraes - Desenvolvedor Front-End",
-  description:
-    "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, Typescript, HTML, CSS ",
+  title: titleShare,
+  description: descriptionShare,
   openGraph: {
-    title: "Mateus Moraes - Desenvolvedor Front-End",
-    description:
-      "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, Typescript, HTML, CSS ",
-    url: "https://mateus-moraes.vercel.app",
-    siteName: "Mateus Moraes - Portfolio",
+    title: titleShare,
+    description: descriptionShare,
+    url: urlShare,
+    siteName: titleShare,
     images: [
       {
-        url: "https://mateus-moraes.vercel.app/image/portfolio.jpg",
+        url: `${urlShare}/image/img-share.jpg"`,
         width: 800,
         height: 546,
       },
@@ -31,12 +34,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mateus Moraes - Desenvolvedor Front-End",
-    description:
-      "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, Typescript, HTML, CSS ",
+    title: titleShare,
+    description: descriptionShare,
     creator: "@cmateusmoraes",
     creatorId: "1467726470533754880",
-    images: ["https://mateus-moraes.vercel.app/image/portfolio.jpg"],
+    images: [`${urlShare}/image/img-share.jpg"`],
   },
 };
 
