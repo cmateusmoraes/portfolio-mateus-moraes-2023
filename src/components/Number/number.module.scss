@@ -19,6 +19,13 @@
   }
 }
 
+@media (min-width: 990px) and (max-height: 830px) {
+  .number {
+    font-size: 64px;
+    line-height: 1.115em;
+  }
+}
+
 @media (max-width: 991px) {
   .number {
     font-size: 64px;

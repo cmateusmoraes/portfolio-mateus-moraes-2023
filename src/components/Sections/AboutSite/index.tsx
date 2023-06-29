@@ -72,7 +72,7 @@ export function AboutSite() {
   });
 
   return (
-    <section className={styles.experiment} id="this-site">
+    <section className={styles.aboutSite} id="this-site">
       <div className="container">
         <hgroup>
           <Title>Sobre o site</Title>
