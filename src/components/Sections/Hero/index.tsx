@@ -2,7 +2,7 @@
 
 import { useRef, useLayoutEffect } from "react";
 import Image from "next/image";
-import { Title } from "../Title";
+import { Title } from "../../Title";
 import { gsap } from "gsap";
 
 import styles from "./hero.module.scss";
@@ -50,16 +50,15 @@ export function Hero() {
             </h1>
             <p>
               <strong>Produtos digitais</strong> modernos, fiéis ao layout, com
-              qualidade e automatização de testes e processos, integração com
-              APIs Rest, CI/CD Pipelines. Experiências com metodologias ágeis.
+              qualidade e automatização de testes e processos, CI/CD Pipelines,
+              integrações com APIs.
             </p>
           </div>
           <div className={styles.image} ref={imageRef}>
             <Image
               src={imgHero}
               alt="Desenvolvimento de produtos digitais modernos, fiéis ao layout, com
-              qualidade e automatização de testes e processos, integração com
-              APIs Rest, CI/CD Pipelines. Experiências com metodologias ágeis."
+              qualidade e automatização de testes e processos, CI/CD Pipelines, integrações com APIs."
               priority={true}
               quality={80}
             />
