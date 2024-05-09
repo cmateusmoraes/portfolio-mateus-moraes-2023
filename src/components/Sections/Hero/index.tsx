@@ -7,7 +7,7 @@ import { Title } from "../../Title";
 
 import styles from "./hero.module.scss";
 
-import imgHero from "./mateus-moraes-front-end-hero.webp";
+import Picture from "@/components/Picture";
 
 export function Hero() {
   const heroRef = useRef(null);
@@ -55,12 +55,13 @@ export function Hero() {
             </p>
           </div>
           <div className={styles.image} ref={imageRef}>
-            <Image
-              src={imgHero}
-              alt="Desenvolvimento de produtos digitais modernos, fiéis ao layout, com
-              qualidade e automatização de testes e processos, CI/CD Pipelines, integrações com APIs."
-              priority={true}
-              quality={80}
+            <Picture
+              imgDesktop="/image/mateus-moraes-front-end-hero.webp"
+              imgMobile="/image/mateus-moraes-front-end-hero-360.webp"
+              alt="mateus-moraes-especialista-front-end"
+              width={680}
+              height={900}
+              lazy="lazy"
             />
           </div>
         </div>

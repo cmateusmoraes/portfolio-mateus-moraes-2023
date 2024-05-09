@@ -21,7 +21,6 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Inclusão de seção descritiva sobre tecnologias usadas no desenvolviento do portfolio.
 - [ ] Finalização da implementação de testes unitários usando Cypress
 - [ ] Implementação de testes e2e usando Cypress
-- [ ] Implementação de Storybook
 - [ ] Otimizações finais
 
 <br>
