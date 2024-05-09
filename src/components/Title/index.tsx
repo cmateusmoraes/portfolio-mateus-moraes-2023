@@ -68,7 +68,7 @@ export function Title({ children, theme }: TitleProps) {
   });
 
   return (
-    <h3
+    <span
       className={`${styles.titleWrapper}
        ${theme === "light" ? styles.light : ""}`}
     >
@@ -78,6 +78,6 @@ export function Title({ children, theme }: TitleProps) {
           {children}
         </span>
       </span>
-    </h3>
+    </span>
   );
 }
