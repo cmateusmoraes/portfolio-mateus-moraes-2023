@@ -68,16 +68,16 @@ export function Title({ children, theme }: TitleProps) {
   });
 
   return (
-    <span
+    <div
       className={`${styles.titleWrapper}
        ${theme === "light" ? styles.light : ""}`}
     >
-      <span className={styles.title} ref={titleWrapperRef}>
+      <h4 ref={titleWrapperRef}>
         <span data-cy="line" className={styles.line} ref={lineRef} />
         <span data-cy="titleText" ref={titleRef}>
           {children}
         </span>
-      </span>
-    </span>
+      </h4>
+    </div>
   );
 }

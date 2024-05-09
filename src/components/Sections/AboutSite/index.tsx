@@ -74,10 +74,10 @@ export function AboutSite() {
   return (
     <section className={styles.aboutSite} id="this-site">
       <div className="container">
-        <hgroup>
+        <header>
           <Title>Sobre o site</Title>
           <h2 ref={titleRef}>Descrição técnica</h2>
-        </hgroup>
+        </header>
 
         <article ref={articleRef}>
           <h3>Tecnologias utilizadas no desenvolvimento desse site:</h3>
@@ -100,8 +100,8 @@ export function AboutSite() {
               <strong>lint-staged</strong> antes dos commits.
             </li>
             <li>
-              Automatização de publicação com <strong>Github</strong> e{" "}
-              <strong>Vercel</strong>.
+              <strong>Pipeline automatizada (CI/CD)</strong>, integração enter Github Actions e Vercel{" "}<br />
+              para deploy em ambiente de homologação e produção.
             </li>
             <li>
               <strong>Código limpo</strong>, semanticamente organizado e
@@ -109,7 +109,7 @@ export function AboutSite() {
             </li>
             <li>
               Implementação de boas práticas para obter uma boa{" "}
-              <strong>performance</strong>.{" "}
+              <strong>performance</strong>.{" "}<br />
               <a
                 href="https://pagespeed.web.dev/analysis/https-www-mateusmoraes-com-br/eecimo4a2i?form_factor=desktop"
                 target="_blank"
