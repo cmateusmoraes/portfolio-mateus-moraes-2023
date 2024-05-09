@@ -3,7 +3,7 @@
 .aboutSite {
   padding: 160px 0 0;
 
-  & > div {
+  &>div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -30,6 +30,11 @@
 
   article {
     width: calc(100% - 400px);
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
 
     p {
       margin-bottom: 25px;
@@ -59,7 +64,7 @@
   .aboutSite {
     padding: 110px 0 60px;
 
-    & > div {
+    &>div {
       display: block;
     }
 
@@ -73,5 +78,4 @@
   }
 }
 
-@media (max-width: 700px) {
-}
+@media (max-width: 700px) {}

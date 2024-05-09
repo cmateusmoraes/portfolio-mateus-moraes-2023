@@ -1,9 +1,9 @@
 "use client";
 
-import { useRef, useLayoutEffect } from "react";
-import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Image from "next/image";
+import { useLayoutEffect, useRef } from "react";
 
 import { Title } from "@/components/Title";
 
@@ -80,7 +80,7 @@ export function AboutSite() {
         </hgroup>
 
         <article ref={articleRef}>
-          <p>Tecnologias utilizadas no desenvolvimento desse site:</p>
+          <h3>Tecnologias utilizadas no desenvolvimento desse site:</h3>
 
           <ul>
             <li>
@@ -111,16 +111,13 @@ export function AboutSite() {
               Implementação de boas práticas para obter uma boa{" "}
               <strong>performance</strong>.{" "}
               <a
-                href="https://pagespeed.web.dev/analysis/http-mateus-moraes-vercel-app/8xn4ey20kg?form_factor=desktop"
+                href="https://pagespeed.web.dev/analysis/https-www-mateusmoraes-com-br/eecimo4a2i?form_factor=desktop"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Clique aqui
               </a>{" "}
               para avaliar com Pagespeed.
-            </li>
-            <li>
-              TODO: Implementar <strong>Storybook</strong>.
             </li>
           </ul>
 

@@ -1,16 +1,15 @@
 "use client";
 
-import { useRef, useLayoutEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
+import { useLayoutEffect, useRef } from "react";
 
 import { Menu } from "../Menu";
 
-import styles from "./footer.module.scss";
 import { ButtonArrow } from "../ButtonArrow";
 import { Logo } from "../Logo";
+import styles from "./footer.module.scss";
 
 export function Footer() {
   const titleRef = useRef(null);
@@ -126,7 +125,7 @@ export function Footer() {
           </div>
 
           <nav className="sitemap" ref={siteMapRef}>
-            <Menu position="footer" onClickButton={() => {}} />
+            <Menu position="footer" onClickButton={() => { }} />
           </nav>
         </div>
       </div>

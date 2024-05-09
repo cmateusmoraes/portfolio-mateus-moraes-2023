@@ -1,15 +1,15 @@
-import "./reset.css";
 import "../styles/globals.scss";
+import "./reset.css";
 
 import { Analytics } from "@vercel/analytics/react";
 import { Space_Grotesk } from "next/font/google";
 
-import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 
 import { metadataInfo } from "@/data/metadata";
 
-const space = Space_Grotesk({ subsets: ["latin"] });
+const space = Space_Grotesk({ subsets: ["latin"], adjustFontFallback: false });
 
 export const metadata = metadataInfo;
 

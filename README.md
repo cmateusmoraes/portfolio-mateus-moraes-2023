@@ -4,13 +4,13 @@ Visite para avaliar: [http://mateus-moraes.vercel.app/](http://mateus-moraes.ver
 
 Contato: [https://www.linkedin.com/in/cmateusmoraes/](https://www.linkedin.com/in/cmateusmoraes/)
 
-<br/>
+<br>
 
 <img src="https://mateus-moraes.vercel.app/image/img-share.jpg" alt="Imagem Portfolio Mateus Moraes Front-End">
 
 > Este portfolio foi criado com o intuito de usar algumas das tecnologias mais demandadas do mercado front-end atualmente.
 
-<br/>
+<br>
 
 ### Ajustes e melhorias
 
@@ -24,7 +24,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Implementação de Storybook
 - [ ] Otimizações finais
 
-<br/>
+<br>
 
 ## 💻 Pré-requisitos
 
@@ -35,7 +35,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Projeto desenvolvido no Windows
    
 
-<br/>
+<br>
 
 ## 🚀 Instalando Portfolio Mateus Moraes
 
@@ -53,7 +53,7 @@ npm install
 npm run prepare
 ```
 
-<br/>
+<br>
 
 ## ☕ Usando Portfolio Mateus Moraes
 
@@ -68,7 +68,7 @@ pnpm dev
 ```
 Abra [http://localhost:3000](http://localhost:3000) no seu navegador e veja o resultado.
 
-<br/>
+<br>
 
 Para compilar Portfolio Mateus Moraes, siga estas etapas:
 
@@ -76,6 +76,6 @@ Para compilar Portfolio Mateus Moraes, siga estas etapas:
 npm run build
 ```
 
-<br/>
+<br>
 
 Esse é um projeto [Next.js](https://nextjs.org/) criado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

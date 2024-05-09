@@ -1,8 +1,8 @@
 "use client";
 
-import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useLayoutEffect, useRef } from "react";
 
 import styles from "./title.module.scss";
 
@@ -68,7 +68,7 @@ export function Title({ children, theme }: TitleProps) {
   });
 
   return (
-    <div
+    <span
       className={`${styles.titleWrapper}
        ${theme === "light" ? styles.light : ""}`}
     >
@@ -78,6 +78,6 @@ export function Title({ children, theme }: TitleProps) {
           {children}
         </span>
       </h4>
-    </div>
+    </span>
   );
 }

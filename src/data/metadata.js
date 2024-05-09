@@ -1,7 +1,7 @@
 const titleShare = "Mateus Moraes - Desenvolvedor Front-End";
 const descriptionShare =
   "Desenvolvedor especialista front-end com mais de 20 anos de experiência | React, Javascript, Next.js, Typescript, HTML, CSS.";
-const urlShare = "https://mateus-moraes.vercel.app";
+const urlShare = "https://mateusmoraes.com.br";
 
 export const metadataInfo = {
   title: titleShare,

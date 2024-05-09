@@ -1,9 +1,9 @@
 "use client";
 
-import { useRef, useLayoutEffect } from "react";
-import Image from "next/image";
-import { Title } from "../../Title";
 import { gsap } from "gsap";
+import Image from "next/image";
+import { useLayoutEffect, useRef } from "react";
+import { Title } from "../../Title";
 
 import styles from "./hero.module.scss";
 

@@ -1,7 +1,7 @@
 [
     {
         "title": "Festival Cultura Inglesa",
-        "text": "<p>O maior desafio nesse projeto foi o desenvolvimento de um <strong>layout fiel</strong> ao projetado, com <strong>animações complexas</strong> e adaptáveis a qualquer tipo de tela. Todo conteúdo integrado por API Rest, cadastro, área logada, customização de perfil, integração com Vimeo, transmissões ao vivo com chats em tempo real entre muitos outros recursos.<p/>",
+        "text": "<p>O maior desafio nesse projeto foi o desenvolvimento de um <strong>layout fiel</strong> ao projetado, com <strong>animações complexas</strong> e adaptáveis a qualquer tipo de tela. Todo conteúdo integrado por API Rest, cadastro, área logada, customização de perfil, integração com Vimeo, transmissões ao vivo com chats em tempo real entre muitos outros recursos.</p>",
         "url": "https://www.culturainglesafestival.com.br/",
         "technologies": [
             "react",
@@ -15,7 +15,7 @@
     },
     {
         "title": "NIVEA Mais",
-        "text": "<p>Uma plataforma para dar aos usuários o caesso a um programa de pontos integrado com as farmácias de todo país. Integração com uma <strong>API complexa</strong>, foco em <strong>usabilidade e experiência do usuário</strong> principalmente na versão para dispositivos móveis. <strong>Layout fiel</strong> ao projetado.<p/>",
+        "text": "<p>Uma plataforma para dar aos usuários o caesso a um programa de pontos integrado com as farmácias de todo país. Integração com uma <strong>API complexa</strong>, foco em <strong>usabilidade e experiência do usuário</strong> principalmente na versão para dispositivos móveis. <strong>Layout fiel</strong> ao projetado.</p>",
         "url": "https://mais.nivea.com.br/",
         "technologies": [
             "react",
@@ -27,7 +27,7 @@
     },
     {
         "title": "Programa Mais Clientes",
-        "text": "<p>Por solicitação do cliente, nesse projeto trabalhamos com <strong>PHP</strong> usando o framework Symfony, e JQuery. Sistema todo administrável com blog, integração complexa com sistema de terceiro para obtenção dos dados.<p/>",
+        "text": "<p>Por solicitação do cliente, nesse projeto trabalhamos com <strong>PHP</strong> usando o framework Symfony, e JQuery. Sistema todo administrável com blog, integração complexa com sistema de terceiro para obtenção dos dados.</p>",
         "url": "https://www.programamaisclientes.com.br/",
         "technologies": [
             "javascript",
