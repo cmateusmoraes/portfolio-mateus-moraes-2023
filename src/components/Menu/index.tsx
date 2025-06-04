@@ -70,7 +70,7 @@ export function Menu({ position, isOpen = false, onClickButton }: menuProps) {
             href="https://api.whatsapp.com/send?phone=5511930322625"
             className="btn-default small"
             target="_blank"
-            rel="norefereer noopener"
+            rel="noreferrer noopener"
           >
             Entre em contato
           </Link>
