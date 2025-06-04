@@ -18,7 +18,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [x] Adaptação e testes para Notebook Wide e tablets na vertical e celulares na horizontal.
 - [x] Implementação do lint-staged com husky para automatizar validação do lint antes dos commits.
-- [x] Inclusão de seção descritiva sobre tecnologias usadas no desenvolviento do portfolio.
+- [x] Inclusão de seção descritiva sobre tecnologias usadas no desenvolvimento do portfolio.
 - [ ] Finalização da implementação de testes unitários usando Cypress
 - [ ] Implementação de testes e2e usando Cypress
 - [ ] Otimizações finais
