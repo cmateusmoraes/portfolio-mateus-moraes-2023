@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "lint-staged",
     "cy:open": "cypress open --component",
-    "cy:run": "cypress run --component",
+    "cy:run": "./scripts/run-cypress.sh",
     "prepare": "husky install"
   },
   "dependencies": {

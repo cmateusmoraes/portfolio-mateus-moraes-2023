@@ -11,6 +11,7 @@ export function IcoHamburguer({
 }: IcoHamburguerProps) {
   return (
     <div
+      data-cy="hamburger"
       onClick={onClick}
       className={`${styles.hamburger} ${styles.hamburgerSpring} ${isClicked ? styles.isActive : ""}`}
     >
