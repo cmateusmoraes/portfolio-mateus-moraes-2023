@@ -97,7 +97,7 @@ export function Footer() {
           <Link
             href="https://api.whatsapp.com/send?phone=5511930322625"
             target="_blank"
-            rel="norefereer noopener"
+            rel="noreferrer noopener"
             ref={letsTalkRef}
           >
             Vamos conversar
