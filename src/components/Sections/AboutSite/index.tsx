@@ -109,15 +109,14 @@ export function AboutSite() {
             </li>
             <li>
               Implementação de boas práticas para obter uma boa{" "}
-              <strong>performance</strong>.{" "}<br />
+              <strong>performance</strong>.{" "}
               <a
-                href="https://pagespeed.web.dev/analysis/https-www-mateusmoraes-com-br/eecimo4a2i?form_factor=desktop"
+                href="https://pagespeed.web.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Clique aqui
-              </a>{" "}
-              para avaliar com Pagespeed.
+                Clique aqui e teste no Pagespeed.
+              </a>
             </li>
           </ul>
 
