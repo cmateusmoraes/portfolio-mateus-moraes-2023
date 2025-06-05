@@ -2,10 +2,18 @@
 const { spawnSync } = require('child_process');
 const os = require('os');
 
-const isLinux = os.platform() === 'linux';
+const platform = os.platform();
+const isLinux = platform === 'linux';
+const isWindows = platform === 'win32';
 
-function run(command, args) {
-  const result = spawnSync(command, args, { stdio: 'inherit', shell: false });
+const npxCmd = isWindows ? 'npx.cmd' : 'npx';
+
+function run(command, args, opts = {}) {
+  const result = spawnSync(command, args, {
+    stdio: 'inherit',
+    shell: false,
+    ...opts,
+  });
   if (result.error) {
     console.error(result.error);
   }
@@ -19,7 +27,7 @@ if (isLinux) {
     spawnSync('apt-get', ['update'], { stdio: 'inherit' });
     spawnSync('apt-get', ['install', '-y', 'xvfb'], { stdio: 'inherit' });
   }
-  run('xvfb-run', ['-a', 'npx', '--yes', 'cypress', 'run', '--component']);
+  run('xvfb-run', ['-a', npxCmd, '--yes', 'cypress', 'run', '--component']);
 } else {
-  run('npx', ['--yes', 'cypress', 'run', '--component']);
+  run(npxCmd, ['--yes', 'cypress', 'run', '--component']);
 }
