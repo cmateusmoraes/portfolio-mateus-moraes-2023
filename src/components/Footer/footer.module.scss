@@ -36,8 +36,9 @@
         color: $primary-color;
 
         div {
-          background-color: $primary-color;
-          border-color: $primary-color;
+          svg path {
+            fill: $primary-color;
+          }
         }
       }
     }

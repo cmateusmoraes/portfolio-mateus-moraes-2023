@@ -8,6 +8,7 @@ import { useLayoutEffect, useRef } from "react";
 import { Menu } from "../Menu";
 
 import { ButtonArrow } from "../ButtonArrow";
+import { ButtonWhatsApp } from "../ButtonWhatsApp";
 import { Logo } from "../Logo";
 import styles from "./footer.module.scss";
 
@@ -101,7 +102,7 @@ export function Footer() {
             ref={letsTalkRef}
           >
             Vamos conversar
-            <ButtonArrow />
+            <ButtonWhatsApp />
           </Link>
         </div>
 
