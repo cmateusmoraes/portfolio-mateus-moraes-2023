@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Tests CODEX
 # install Xvfb if not installed
 if ! command -v Xvfb >/dev/null 2>&1; then
   echo "Xvfb not found. Installing..."
