@@ -73,6 +73,12 @@ export function Menu({ position, isOpen = false, onClickButton }: menuProps) {
             rel="noreferrer noopener"
           >
             Entre em contato
+            <img
+              src="/image/whatsapp-white.svg"
+              alt="WhatsApp"
+              width={16}
+              height={16}
+            />
           </Link>
         </li>
       </ul>
