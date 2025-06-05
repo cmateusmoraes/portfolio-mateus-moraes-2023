@@ -100,7 +100,7 @@ export function AboutSite() {
               <strong>lint-staged</strong> antes dos commits.
             </li>
             <li>
-              <strong>Pipeline automatizada (CI/CD)</strong>, integração enter Github Actions e Vercel{" "}<br />
+              <strong>Pipeline automatizada (CI/CD)</strong>, integração entre GitHub Actions e Vercel{" "}<br />
               para deploy em ambiente de homologação e produção.
             </li>
             <li>
