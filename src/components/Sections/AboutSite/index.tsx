@@ -109,7 +109,14 @@ export function AboutSite() {
             </li>
             <li>
               Implementação de boas práticas para obter uma boa{" "}
-              <strong>performance</strong>.
+              <strong>performance</strong>.{" "}
+              <a
+                href="https://pagespeed.web.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Clique aqui e teste no Pagespeed.
+              </a>
             </li>
           </ul>
 
