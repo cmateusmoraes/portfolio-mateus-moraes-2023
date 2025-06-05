@@ -2,13 +2,11 @@
 
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import { ButtonArrow } from "@/components/ButtonArrow";
 
 import styles from "./portfolio.module.scss";
 
@@ -16,7 +14,6 @@ type PortfolioItemProps = {
   image: String;
   title: String;
   technologies: String[];
-  url?: String;
   children: React.ReactNode;
 };
 
@@ -25,7 +22,6 @@ gsap.registerPlugin(ScrollTrigger);
 export function PortfolioItem({
   image,
   title,
-  url,
   technologies,
   children,
 }: PortfolioItemProps) {
@@ -53,19 +49,18 @@ export function PortfolioItem({
 
   return (
     <div className={styles.job} ref={jobRef}>
-      <Link href={String(url)} target="_blank" rel="noopener noreferrer">
-        <div className={styles.image}>
-          <Image
-            src={String(image)}
-            alt={String(title)}
-            width={800}
-            height={540}
-            quality={100}
-            loading="lazy"
-          />
-        </div>
+      <div className={styles.image}>
+        <Image
+          src={String(image)}
+          alt={String(title)}
+          width={800}
+          height={540}
+          quality={100}
+          loading="lazy"
+        />
+      </div>
 
-        <div className={styles.detail}>
+      <div className={styles.detail}>
           <h4>{title}</h4>
           {children}
 
@@ -215,8 +210,7 @@ export function PortfolioItem({
           </ul>
         </div>
 
-        <ButtonArrow />
-      </Link>
+
     </div>
   );
 }

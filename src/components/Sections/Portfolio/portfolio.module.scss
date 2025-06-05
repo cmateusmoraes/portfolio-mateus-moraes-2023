@@ -26,13 +26,11 @@
 
 .job {
   position: relative;
-
-  a {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
-    text-decoration: none;
-    height: 375px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  text-decoration: none;
+  height: 375px;
 
     .image {
       position: relative;
@@ -111,25 +109,6 @@
       }
     }
 
-    &:hover {
-      .image {
-        &:after {
-          background-color: rgba(0, 0, 0, 0);
-        }
-      }
-
-      .detail {
-        h4 {
-          color: $primary-color;
-        }
-      }
-
-      & > div:last-child {
-        border-color: $primary-color;
-        background-color: $primary-color;
-      }
-    }
-  }
 }
 
 @media (max-width: 1280px) {
@@ -153,18 +132,16 @@
     }
 
     .job {
-      a {
-        .image {
-          img {
-            display: block;
-            max-width: 90%;
-            height: auto;
-          }
+      .image {
+        img {
+          display: block;
+          max-width: 90%;
+          height: auto;
         }
+      }
 
-        .detail {
-          padding-left: 0;
-        }
+      .detail {
+        padding-left: 0;
       }
 
       ul {
@@ -194,24 +171,22 @@
     }
 
     .job {
-      a {
-        height: auto;
-        display: block;
+      height: auto;
+      display: block;
 
-        .image {
-          position: relative;
+      .image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+
+        &:after {
+          opacity: 0;
+        }
+
+        img {
           width: 100%;
           height: auto;
-          margin-bottom: 15px;
-
-          &:after {
-            opacity: 0;
-          }
-
-          img {
-            width: 100%;
-            height: auto;
-          }
         }
       }
 
