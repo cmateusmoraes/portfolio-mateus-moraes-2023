@@ -12,6 +12,9 @@
       &:last-child {
         a {
           color: $black-color;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
         }
       }
     }
