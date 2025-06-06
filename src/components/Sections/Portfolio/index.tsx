@@ -96,7 +96,6 @@ export function Portfolio() {
               key={index}
               image={_job.image}
               title={_job.title}
-              url={_job.url}
               technologies={_job.technologies}
             >
               <div dangerouslySetInnerHTML={{ __html: _job.text }} />

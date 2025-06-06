@@ -51,9 +51,18 @@ export function PortfolioItem({
     );
   });
 
+  const Wrapper = ({ children }: { children: React.ReactNode }) =>
+    url ? (
+      <Link href={String(url)} target="_blank" rel="noopener noreferrer">
+        {children}
+      </Link>
+    ) : (
+      <>{children}</>
+    );
+
   return (
     <div className={styles.job} ref={jobRef}>
-      <Link href={String(url)} target="_blank" rel="noopener noreferrer">
+      <Wrapper>
         <div className={styles.image}>
           <Image
             src={String(image)}
@@ -216,7 +225,7 @@ export function PortfolioItem({
         </div>
 
         <ButtonArrow />
-      </Link>
+      </Wrapper>
     </div>
   );
 }
