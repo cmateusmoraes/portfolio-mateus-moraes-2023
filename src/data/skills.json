@@ -1,0 +1,74 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "frontend",
+    "proficiency": 95
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "frontend",
+    "proficiency": 95
+  },
+  {
+    "id": "javascript",
+    "name": "Javascript",
+    "category": "language",
+    "proficiency": 95
+  },
+  {
+    "id": "typescript",
+    "name": "Typescript",
+    "category": "language",
+    "proficiency": 90
+  },
+  {
+    "id": "html",
+    "name": "HTML",
+    "category": "frontend",
+    "proficiency": 100
+  },
+  {
+    "id": "css",
+    "name": "CSS",
+    "category": "frontend",
+    "proficiency": 95
+  },
+  {
+    "id": "styled-components",
+    "name": "Styled Components",
+    "category": "styling",
+    "proficiency": 90
+  },
+  {
+    "id": "sass",
+    "name": "SASS",
+    "category": "styling",
+    "proficiency": 95
+  },
+  {
+    "id": "storybook",
+    "name": "Storybook",
+    "category": "tools",
+    "proficiency": 85
+  },
+  {
+    "id": "redux",
+    "name": "Redux",
+    "category": "state-management",
+    "proficiency": 85
+  },
+  {
+    "id": "cypress",
+    "name": "Cypress",
+    "category": "testing",
+    "proficiency": 80
+  },
+  {
+    "id": "react-query",
+    "name": "React Query",
+    "category": "data-fetching",
+    "proficiency": 85
+  }
+]

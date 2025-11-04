@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "name": "Mateus Moraes",
+    "title": "Desenvolvedor Front-End Sênior",
+    "subtitle": "Especializado em React, Next.js e TypeScript"
+  },
+  "about": {
+    "title": "Sobre",
+    "subtitle": "Desenvolvedor Front-End Sr.",
+    "paragraphs": [
+      "Meu nome é <strong>Mateus Moraes</strong>, sou um front-end que realmente gosta do que faz. Iniciei em agências de publicidade como júnior e, quando saí delas, estava <strong>coordenando equipes</strong> de desenvolvimento.",
+      "Em 2015, decidi seguir carreira solo como freelancer, onde tenho a oportunidade de participar dos mais variados tipos de projetos: <strong>produtos digitais para startups, MVPs, sites promocionais, plataformas de fidelização de clientes, institucionais e landing pages</strong>.",
+      "Em muitos desses projetos, tenho contato direto com o cliente desde a ideação, ajudando na definição do melhor tipo de arquitetura para cada um dos desafios. Com tantos projetos diferentes já me aventurei na <strong>AWS, Azure, Vercel, Google Cloud entre outras</strong>."
+    ],
+    "stats": [
+      {
+        "value": 20,
+        "unit": "+",
+        "label": "Anos de experiência"
+      },
+      {
+        "value": 49,
+        "unit": "K+",
+        "label": "Xícaras de café"
+      },
+      {
+        "value": 2,
+        "unit": ".",
+        "label": "Filhos lindos"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Últimos projetos"
+  },
+  "aboutSite": {
+    "title": "Sobre o Site",
+    "description": "Este portfolio foi desenvolvido com as tecnologias mais modernas do mercado, incluindo Next.js 15, React 19, TypeScript, testes automatizados e muito mais."
+  }
+}
