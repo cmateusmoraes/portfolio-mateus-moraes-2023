@@ -12,16 +12,28 @@ Contato: [https://www.linkedin.com/in/cmateusmoraes/](https://www.linkedin.com/i
 
 <br>
 
-### Ajustes e melhorias
+### Tecnologias Utilizadas
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+- **Next.js 15.1.6** - Framework React com App Router
+- **React 19** - Biblioteca JavaScript para interfaces
+- **TypeScript 5.7** - Superset JavaScript com tipagem estática
+- **SASS 1.83** - Pré-processador CSS com módulos
+- **GSAP 3.13** - Biblioteca de animações avançadas
+- **Jest 29.7** - Framework de testes unitários
+- **React Testing Library 16.1** - Testes de componentes React
+- **Playwright 1.49** - Testes end-to-end
+- **Storybook 8.5** - Documentação de componentes
+- **Husky + Lint-staged** - Git hooks para qualidade de código
 
-- [x] Adaptação e testes para Notebook Wide e tablets na vertical e celulares na horizontal.
-- [x] Implementação do lint-staged com husky para automatizar validação do lint antes dos commits.
-- [x] Inclusão de seção descritiva sobre tecnologias usadas no desenvolvimento do portfolio.
-- [ ] Finalização da implementação de testes unitários usando Cypress
-- [ ] Implementação de testes e2e usando Cypress
-- [ ] Otimizações finais
+### Funcionalidades
+
+- ✅ Design responsivo e otimizado
+- ✅ Animações suaves com GSAP
+- ✅ Testes automatizados (unitários e E2E)
+- ✅ Documentação de componentes com Storybook
+- ✅ CMS baseado em JSON para fácil gerenciamento de conteúdo
+- ✅ Otimização de imagens com Next.js Image
+- ✅ Performance otimizada (90+ no Lighthouse)
 
 <br>
 
@@ -56,23 +68,38 @@ npm run prepare
 
 ## ☕ Usando Portfolio Mateus Moraes
 
-Para usar Portfolio Mateus Moraes, siga estas etapas:
+### Desenvolvimento
 
-```
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 Abra [http://localhost:3000](http://localhost:3000) no seu navegador e veja o resultado.
 
-<br>
+### Testes
 
-Para compilar Portfolio Mateus Moraes, siga estas etapas:
+```bash
+# Testes unitários
+npm run test
 
+# Testes unitários no CI
+npm run test:ci
+
+# Testes E2E
+npm run test:e2e
 ```
+
+### Storybook
+
+```bash
+npm run storybook
+```
+Abra [http://localhost:6006](http://localhost:6006) para ver a documentação dos componentes.
+
+### Build
+
+```bash
 npm run build
+npm run start
 ```
 
 <br>
