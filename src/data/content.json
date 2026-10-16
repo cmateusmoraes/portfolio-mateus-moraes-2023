@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "title": "Mateus Moraes",
+    "subtitle": "Front-end Developer",
+    "description": "Especialista em React, Next.js e desenvolvimento de interfaces modernas"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "text": "Desenvolvedor front-end focado em criar experiências web excepcionais"
+  },
+  "contact": {
+    "title": "Contato",
+    "email": "contato@example.com"
+  }
+}

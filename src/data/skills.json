@@ -1,0 +1,44 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "frontend",
+    "proficiency": 95
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "frontend",
+    "proficiency": 95
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "frontend",
+    "proficiency": 90
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "category": "frontend",
+    "proficiency": 95
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "backend",
+    "proficiency": 85
+  },
+  {
+    "id": "sass",
+    "name": "SASS/SCSS",
+    "category": "frontend",
+    "proficiency": 90
+  },
+  {
+    "id": "gsap",
+    "name": "GSAP",
+    "category": "animation",
+    "proficiency": 85
+  }
+]
