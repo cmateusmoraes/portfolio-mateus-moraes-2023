@@ -1,10 +1,17 @@
-/* eslint-disable @next/next/no-img-element */
-import styles from "./button-arrow.module.scss";
+import { memo } from 'react'
+import Image from 'next/image'
+import styles from './button-arrow.module.scss'
 
-export function ButtonArrow() {
+export const ButtonArrow = memo(function ButtonArrow() {
   return (
-    <div className={styles.buttonArrow}>
-      <img src="/image/arrow-white.svg" alt="Seguir" width={20} height={20} />
+    <div className={styles.buttonArrow} role="presentation">
+      <Image
+        src="/image/arrow-white.svg"
+        alt="Seguir"
+        width={20}
+        height={20}
+        priority={false}
+      />
     </div>
-  );
-}
+  )
+})
